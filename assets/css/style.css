@@ -1,0 +1,202 @@
+/* Variables */
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #8b5cf6;
+    --transition-speed: 0.3s;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Text gradient */
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: var(--gradient);
+}
+
+/* Navigation styling */
+.nav-link {
+    position: relative;
+    transition: color var(--transition-speed) ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width var(--transition-speed) ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+/* Tambahan warna untuk link aktif */
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Section title styling */
+.section-title {
+    position: relative;
+    display: inline-block;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: var(--gradient);
+}
+
+/* Timeline styles */
+.timeline-item {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: -37px;
+    top: 5px;
+    background: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Form focus effects */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* Image effects */
+.hero-image-container:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--gradient);
+    opacity: 0.03;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* ===== GAYA BARU UNTUK SKILL TAGS ===== */
+.skill-tag {
+    background-color: #f3f4f6; /* bg-gray-100 */
+    color: #1f2937; /* text-gray-800 */
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    transition: all var(--transition-speed) ease;
+}
+.skill-tag:hover {
+    background: var(--gradient);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Status messages for contact form */
+.success-message {
+    background-color: #d1fae5;
+    border-left: 4px solid #10b981;
+    color: #065f46;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+    color: #b91c1c;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+}
+
+/* ===== GAYA BARU UNTUK MODAL PROYEK ===== */
+#project-modal.flex {
+    display: flex;
+}
+#project-modal .transform {
+    transition-property: transform, opacity;
+}
+#project-modal.visible .transform {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .section-title::after {
+        width: 100%;
+    }
+    .timeline-item::before {
+        left: -33px;
+    }
+}
+
+/* Print styles for resume */
+@media print {
+    nav, footer, .contact-form, #project-modal {
+        display: none;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+}
