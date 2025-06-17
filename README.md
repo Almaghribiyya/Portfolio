@@ -21,7 +21,7 @@ A modern, responsive personal portfolio website showcasing my projects, skills, 
 📊 Skills and experience timeline
 🏆 Achievements section
 
-View the live portfolio: Portfolio Website
+View the live portfolio: [Portfolio Website](https://almaghribiyya-portfolio.vercel.app/)
 
 
 ⚙️ Installation
