@@ -32,10 +32,10 @@ Use VS Code Live Server extension
 Or open index.html in your browser
 
 🛠️ Technologies Used
-HTML5
-CSS3
-JavaScript (Vanilla)
-TailwindCSS
+HTML5,
+CSS3,
+JavaScript (Vanilla),
+TailwindCSS,
 Formspree (Contact Form)
 
 Built with ❤️ by [Muhammad Rezka Al Maghribi]
