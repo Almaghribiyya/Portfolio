@@ -11,31 +11,43 @@
 A modern, responsive personal portfolio website showcasing my projects, skills, and professional journey. Built with HTML5, CSS3, JavaScript, and TailwindCSS, featuring smooth animations and a clean, professional design.
 
 ✨ Features
+
 🎨 Modern and responsive design
-🌓 Smooth scroll navigation
+
+
 💼 Project showcase with modal details
-📱 Mobile-first approach
+
 🎯 Interactive UI elements
+
 📬 Functional contact form (via Formspree)
-🌟 CSS animations and transitions
+
 📊 Skills and experience timeline
+
 🏆 Achievements section
 
 View the live portfolio: [Portfolio Website](https://almaghribiyya-portfolio.vercel.app/)
 
 
 ⚙️ Installation
-Clone the repository
-Navigate to project directory
-Open with live server
-Use VS Code Live Server extension
+1. Clone the repository
+   
+2. Navigate to project directory
+   
+4. Open with live server
+   
+5. Use VS Code Live Server extension
 Or open index.html in your browser
 
 🛠️ Technologies Used
-HTML5,
-CSS3,
-JavaScript (Vanilla),
-TailwindCSS,
+
+HTML5
+
+CSS3
+
+JavaScript (Vanilla)
+
+TailwindCSS
+
 Formspree (Contact Form)
 
 Built with ❤️ by [Muhammad Rezka Al Maghribi]
