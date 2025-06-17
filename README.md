@@ -26,9 +26,6 @@ A modern, responsive personal portfolio website showcasing my projects, skills, 
 
 🏆 Achievements section
 
-View the live portfolio: [Portfolio Website](https://almaghribiyya-portfolio.vercel.app/)
-
-
 ⚙️ Installation
 1. Clone the repository
    
@@ -39,5 +36,6 @@ View the live portfolio: [Portfolio Website](https://almaghribiyya-portfolio.ver
 5. Use VS Code Live Server extension
 Or open index.html in your browser
 
+View the live portfolio: [Portfolio Website](https://almaghribiyya-portfolio.vercel.app/)
 
 Built with ❤️ by [Muhammad Rezka Al Maghribi]
