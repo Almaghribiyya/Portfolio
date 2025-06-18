@@ -17,9 +17,8 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Muhammad Rezka Al Maghribi | Portfolio">
-    <meta name="twitter:description" content="Informatics student & developer passionate about creating innovative solutions with code.">
-    <meta name="twitter:image" content="https://almaghribiyya-portfolio.vercel.app/assets/images/foto_profil.jpg">
-
+    <meta property="og:description" content="Informatics student & developer passionate about creating innovative solutions with code.">
+    <meta property="og:image" content="https://almaghribiyya-portfolio.vercel.app/assets/images/foto_profil.jpg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -118,16 +117,16 @@
                                 <p class="text-gray-500 text-sm">2022 – Present</p>
                             </div>
                         </div>
-                         <div class="flex items-start">
-                            <div class="bg-purple-100 p-3 rounded-full mr-4">
-                                <i class="fas fa-school text-purple-600"></i>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-school text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">SMAN 1 Sukagumiwang</h4>
+                                    <p class="text-gray-600">Science Major</p>
+                                    <p class="text-gray-500 text-sm">2018 – 2021</p>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-semibold">SMAN 1 Sukagumiwang</h4>
-                                <p class="text-gray-600">Science Major</p>
-                                <p class="text-gray-500 text-sm">2018 – 2021</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -161,55 +160,83 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-12 section-title">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover" data-project-title="Trash Hero" data-project-desc="A software solution targeting waste management issues in the Greater Jakarta area." data-project-tags="UI/UX,Flutter,Firebase">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Trash Hero</h3>
-                        <p class="text-gray-600 mb-4">A software solution for waste management issues.</p>
-                        <button class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</button>
-                    </div>
-                </div>
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover" data-project-title="Wicara Application" data-project-desc="A communication platform developed for the PIMNAS competition." data-project-tags="Technical-Writer,JavaScript,PostgreSQL">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Wicara Application</h3>
-                        <p class="text-gray-600 mb-4">A communication platform for the PIMNAS competition.</p>
-                        <button class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</button>
-                    </div>
-                </div>
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover" data-project-title="Portfolio Website" data-project-desc="A responsive personal portfolio website built with modern technologies." data-project-tags="Full-stack,HTML,Tailwind CSS,JavaScript">
-                    <div class="p-6">
+                
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover flex flex-col" 
+                     data-project-title="Portfolio Website" 
+                     data-project-desc="A responsive personal portfolio website built with modern technologies to showcase my skills and projects." 
+                     data-project-tags="Full-stack,HTML,Tailwind CSS,JavaScript"
+                     data-project-url="https://almaghribiyya-portfolio.vercel.app/"
+                     data-project-image="assets/images/Portfolio.png">
+                    
+                    <img src="assets/images/Portfolio.png" alt="Screenshot Portfolio Website" class="project-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-                        <p class="text-gray-600 mb-4">This personal portfolio website.</p>
-                        <button class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</button>
+                        <p class="text-gray-600 mb-4 flex-grow">This personal portfolio website.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="#" class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</a>
+                            <a href="https://almaghribiyya-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-demo-btn text-purple-600 hover:text-purple-800 font-medium">Live Demo</a>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover" data-project-title="Blade of Lumora" data-project-desc="A 2D platformer-themed game." data-project-tags="Full-stack,Unity,C#">
-                    <div class="p-6">
+                
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover flex flex-col" 
+                     data-project-title="Blade of Lumora" 
+                     data-project-desc="Blade of Lumora is a 2D action platformer game built with Unity, featuring smooth combat mechanics, dark forest terrain & enemy AI. Players navigate through challenging environments while collecting keys and battling enemies." 
+                     data-project-tags="Full-stack,Unity,C#"
+                     data-project-url="https://s1natraaa.itch.io/bladeoflumora"
+                     data-project-image="assets/images/bladeoflumora.png">
+                    
+                    <img src="assets/images/bladeoflumora.png" alt="Screenshot Blade of Lumora" class="project-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold mb-2">Blade of Lumora</h3>
-                        <p class="text-gray-600 mb-4">A 2D platformer-themed game.</p>
-                        <button class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</button>
+                        <p class="text-gray-600 mb-4 flex-grow">A 2D platformer-themed game.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="#" class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</a>
+                            <a href="https://s1natraaa.itch.io/bladeoflumora" target="_blank" rel="noopener noreferrer" class="live-demo-btn text-purple-600 hover:text-purple-800 font-medium">Live Demo</a>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover" data-project-title="Kasir Toko Kopi" data-project-desc="Simple coffee shop cashier GUI." data-project-tags="Full-stack,Java,NetBeans,Intellij">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Kasir Toko Kopi</h3>
-                        <p class="text-gray-600 mb-4">Simple coffee shop cashier GUI.</p>
-                        <button class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</button>
-                    </div>
-                </div>
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover" data-project-title="Agentic Medical" data-project-desc="An agentic system integrated with LLM, RAG, and a search engine." data-project-tags="Full-stack,Python,LangChain,Streamlit,Cohere,FAISS">
-                    <div class="p-6">
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover flex flex-col" 
+                     data-project-title="Agentic Medical" 
+                     data-project-desc="An intelligent medical assistant chatbot powered by Google's Gemini AI, featuring document analysis, multilingual support, and comprehensive medical information retrieval. Built with Streamlit and LangChain." 
+                     data-project-tags="Full-stack,Python,Streamlit,LangChain,Cohere,FAISS"
+                     data-project-url="https://agentic-medical.streamlit.app/"
+                     data-project-image="assets/images/agentic_medical.png">
+                    
+                    <img src="assets/images/agentic_medical.png" alt="Screenshot New Project" class="project-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold mb-2">Agentic Medical</h3>
-                        <p class="text-gray-600 mb-4">An agentic system integrated with LLM, RAG, and a search engine.</p>
-                        <button class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</button>
+                        <p class="text-gray-600 mb-4 flex-grow">An agentic system integrated with LLM, RAG, and a search engine.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="#" class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</a>
+                            <a href="https://agentic-medical.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live-demo-btn text-purple-600 hover:text-purple-800 font-medium">Live Demo</a>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover" data-project-title="Online Coffee Shop" data-project-desc="A coffee shop website with an elegant appearance." data-project-tags="UI/UX,Figma,PHP,Laravel,Tailwind CSS">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Online Coffee Shop</h3>
-                        <p class="text-gray-600 mb-4">A coffee shop website with an elegant appearance.</p>
-                        <button class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</button>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover flex flex-col" 
+                     data-project-title="PBKDF2 CryptoSuite" 
+                     data-project-desc="A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Derivation Function 2), featuring secure password hashing, cryptographic salt generation, and user-friendly interface for data encryption and decryption." 
+                     data-project-tags="Full-stack,Python,Streamlit,LangChain,Cohere,FAISS"
+                     data-project-url="https://pbkdf2-webapp.vercel.app/"
+                     data-project-image="assets/images/pbkdf2.png">
+                    
+                    <img src="assets/images/pbkdf2.png" alt="Screenshot New Project" class="project-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Agentic Medical</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Derivation Function 2).</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="#" class="view-details-btn text-blue-600 hover:text-blue-800 font-medium">View Details</a>
+                            <a href="https://pbkdf2-webapp.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-demo-btn text-purple-600 hover:text-purple-800 font-medium">Live Demo</a>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -221,7 +248,7 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm">
                     <h3 class="text-xl font-semibold mb-6 flex items-center"><i class="fas fa-code text-blue-600 mr-3"></i> Technical Skills</h3>
                     <div class="flex flex-wrap gap-2">
-                       <span class="skill-tag">Python</span> <span class="skill-tag">JavaScript</span> <span class="skill-tag">PHP</span> <span class="skill-tag">Laravel</span> <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span> <span class="skill-tag">JavaScript</span> <span class="skill-tag">PHP</span> <span class="skill-tag">Laravel</span>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-sm">
@@ -316,6 +343,9 @@
                             <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                        
+                        <div id="contact-form-status" class="mt-4 text-center"></div>
+
                     </form>
                 </div>
             </div>
@@ -356,8 +386,13 @@
                         <i class="fas fa-times fa-lg"></i>
                     </button>
                 </div>
+                <div class="modal-image-container mb-4">
+                    <img id="modal-image" src="" alt="Project Screenshot" class="w-full h-auto rounded-md object-contain">
+                </div>
                 <p id="modal-desc" class="text-gray-600 mb-4"></p>
                 <div class="flex flex-wrap gap-2" id="modal-tags"></div>
+                <div class="flex gap-4 mt-6" id="modal-buttons">
+                </div>
             </div>
         </div>
     </div>

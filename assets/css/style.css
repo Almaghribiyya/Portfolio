@@ -1,4 +1,4 @@
-/* Variables */
+/* :root */
 :root {
     --primary-color: #3b82f6;
     --secondary-color: #8b5cf6;
@@ -9,28 +9,30 @@
     --gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
-/* Animations */
+/* @keyframes fadeIn */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* @keyframes slideInLeft */
 @keyframes slideInLeft {
     from { opacity: 0; transform: translateX(-20px); }
     to { opacity: 1; transform: translateX(0); }
 }
 
-/* Base Styles */
+/* html */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
 
+/* body */
 body {
     overflow-x: hidden;
 }
 
-/* Text gradient */
+/* .gradient-text */
 .gradient-text {
     background-clip: text;
     -webkit-background-clip: text;
@@ -38,12 +40,13 @@ body {
     background-image: var(--gradient);
 }
 
-/* Navigation styling */
+/* .nav-link */
 .nav-link {
     position: relative;
     transition: color var(--transition-speed) ease;
 }
 
+/* .nav-link::after */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -55,31 +58,35 @@ body {
     transition: width var(--transition-speed) ease;
 }
 
+/* .nav-link:hover::after, .nav-link.active::after */
 .nav-link:hover::after, .nav-link.active::after {
     width: 100%;
 }
-/* Tambahan warna untuk link aktif */
+
+/* .nav-link.active */
 .nav-link.active {
     color: var(--primary-color);
 }
 
-/* Card hover effects */
+/* .card-hover */
 .card-hover {
     transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
+/* .card-hover:hover */
 .card-hover:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-/* Section title styling */
+/* .section-title */
 .section-title {
     position: relative;
     display: inline-block;
     animation: fadeIn 0.8s ease-out;
 }
 
+/* .section-title::after */
 .section-title::after {
     content: '';
     position: absolute;
@@ -90,11 +97,12 @@ body {
     background: var(--gradient);
 }
 
-/* Timeline styles */
+/* .timeline-item */
 .timeline-item {
     animation: slideInLeft 0.5s ease-out;
 }
 
+/* .timeline-item::before */
 .timeline-item::before {
     content: '';
     position: absolute;
@@ -107,14 +115,14 @@ body {
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
 }
 
-/* Form focus effects */
+/* input:focus, textarea:focus */
 input:focus, textarea:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
 }
 
-/* Image effects */
+/* .hero-image-container:after */
 .hero-image-container:after {
     content: '';
     position: absolute;
@@ -128,15 +136,17 @@ input:focus, textarea:focus {
     z-index: -1;
 }
 
-/* ===== GAYA BARU UNTUK SKILL TAGS ===== */
+/* .skill-tag */
 .skill-tag {
-    background-color: #f3f4f6; /* bg-gray-100 */
-    color: #1f2937; /* text-gray-800 */
+    background-color: #f3f4f6;
+    color: #1f2937;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.875rem;
     transition: all var(--transition-speed) ease;
 }
+
+/* .skill-tag:hover */
 .skill-tag:hover {
     background: var(--gradient);
     color: white;
@@ -144,7 +154,7 @@ input:focus, textarea:focus {
     box-shadow: var(--shadow-md);
 }
 
-/* Status messages for contact form */
+/* .success-message */
 .success-message {
     background-color: #d1fae5;
     border-left: 4px solid #10b981;
@@ -154,6 +164,7 @@ input:focus, textarea:focus {
     border-radius: 0.375rem;
 }
 
+/* .error-message */
 .error-message {
     background-color: #fee2e2;
     border-left: 4px solid #ef4444;
@@ -163,19 +174,93 @@ input:focus, textarea:focus {
     border-radius: 0.375rem;
 }
 
-/* ===== GAYA BARU UNTUK MODAL PROYEK ===== */
+/* #project-modal.flex */
 #project-modal.flex {
     display: flex;
 }
+
+/* #project-modal .transform */
 #project-modal .transform {
     transition-property: transform, opacity;
 }
+
+/* #project-modal.visible .transform */
 #project-modal.visible .transform {
     transform: scale(1);
     opacity: 1;
 }
 
-/* Responsive fixes */
+/* .project-card-image */
+.project-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: block;
+}
+
+/* .modal-image-container */
+.modal-image-container {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    border-radius: 0.375rem;
+}
+
+/* .modal-image-container img */
+.modal-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* .live-demo-btn */
+.live-demo-btn {
+    display: inline-block;
+}
+
+/* .modal-button */
+.modal-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all var(--transition-speed) ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .modal-button.view-details */
+.modal-button.view-details {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* .modal-button.view-details:hover */
+.modal-button.view-details:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* .modal-button.live-demo */
+.modal-button.live-demo {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* .modal-button.live-demo:hover */
+.modal-button.live-demo:hover {
+    background-color: #7c3aed;
+}
+
+/* @media (max-width: 768px) */
 @media (max-width: 768px) {
     .section-title::after {
         width: 100%;
@@ -183,9 +268,12 @@ input:focus, textarea:focus {
     .timeline-item::before {
         left: -33px;
     }
+    .project-card-image {
+        height: 150px; 
+    }
 }
 
-/* Print styles for resume */
+/* @media print */
 @media print {
     nav, footer, .contact-form, #project-modal {
         display: none;
